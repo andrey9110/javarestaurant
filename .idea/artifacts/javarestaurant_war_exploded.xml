@@ -1,0 +1,24 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="javarestaurant:war exploded">
+    <output-path>$PROJECT_DIR$/target/javarestaurant</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="javarestaurant" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.18" />
+          <element id="library" level="project" name="Maven: org.slf4j:jcl-over-slf4j:1.7.18" />
+          <element id="library" level="project" name="Maven: org.slf4j:jul-to-slf4j:1.7.18" />
+          <element id="library" level="project" name="Maven: ch.qos.logback:logback-classic:1.1.6" />
+          <element id="library" level="project" name="Maven: ch.qos.logback:logback-core:1.1.6" />
+          <element id="library" level="project" name="Maven: javax.servlet:jstl:1.2" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/target/javarestaurant/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="javarestaurant/web/Web" />
+    </root>
+  </artifact>
+</component>
