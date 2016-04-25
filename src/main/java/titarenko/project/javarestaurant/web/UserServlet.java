@@ -1,4 +1,4 @@
-package web;
+package titarenko.project.javarestaurant.web;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;

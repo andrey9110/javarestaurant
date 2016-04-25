@@ -1,6 +1,7 @@
-package util;
+package titarenko.project.javarestaurant.util;
 
-import model.Dish;
+
+import titarenko.project.javarestaurant.model.Dish;
 
 import java.util.Arrays;
 import java.util.List;

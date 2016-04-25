@@ -1,4 +1,6 @@
-import model.BaseEntity;
+package titarenko.project.javarestaurant;
+
+import titarenko.project.javarestaurant.model.BaseEntity;
 
 /**
  * GKislin

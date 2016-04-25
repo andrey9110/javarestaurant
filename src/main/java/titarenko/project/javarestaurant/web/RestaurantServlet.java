@@ -1,9 +1,9 @@
-package web;
+package titarenko.project.javarestaurant.web;
 
-import model.Restaurant;
-import repository.InMemoryRestaurantRepositoryImpl;
-import repository.RestaurantRepository;
-import util.RestaurantUtil;
+
+
+import titarenko.project.javarestaurant.repository.InMemoryRestaurantRepositoryImpl;
+import titarenko.project.javarestaurant.repository.RestaurantRepository;
 
 import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;

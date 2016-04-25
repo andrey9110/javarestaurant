@@ -1,6 +1,5 @@
-package util;
+package titarenko.project.javarestaurant.util;
 
-import model.User;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;

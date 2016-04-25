@@ -1,4 +1,4 @@
-package model;
+package titarenko.project.javarestaurant.model;
 
 /**
  * Created by MyMac on 03.04.16.
@@ -28,9 +28,9 @@ public class Dish extends NamedEntity{
     protected Integer price;
 
     public Dish(String name, Integer price){
-        this.name = name;
-        this.price = price;
+        this(null,name,price);
     }
+
     public Dish(Integer id, String name, Integer price){
         this.id = id;
         this.name = name;

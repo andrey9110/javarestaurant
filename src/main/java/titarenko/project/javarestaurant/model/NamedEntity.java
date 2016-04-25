@@ -1,4 +1,4 @@
-package model;
+package titarenko.project.javarestaurant.model;
 
 /**
  * Created by MyMac on 03.04.16.

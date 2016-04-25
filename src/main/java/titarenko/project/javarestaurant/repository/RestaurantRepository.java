@@ -1,6 +1,8 @@
-package repository;
+package titarenko.project.javarestaurant.repository;
 
-import model.Restaurant;
+
+
+import titarenko.project.javarestaurant.model.Restaurant;
 
 import java.util.Collection;
 
