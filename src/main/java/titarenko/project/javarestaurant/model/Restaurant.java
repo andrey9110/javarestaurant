@@ -1,5 +1,10 @@
 package titarenko.project.javarestaurant.model;
 
+import titarenko.project.javarestaurant.model.Dish;
+import titarenko.project.javarestaurant.model.NamedEntity;
+
+import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
@@ -11,17 +16,17 @@ public class Restaurant extends NamedEntity {
 
     protected Set<Integer> votes;
 
-    protected List<Dish> menu;
+    protected Map<LocalDate,List<Dish>> menu;
 
-    public Restaurant(String name, List<Dish> menu) {
+    public Restaurant(String name,Map<LocalDate,List<Dish>>  todayMenu) {
         this.name = name;
-        this.menu = menu;
+        this.menu = todayMenu;
     }
 
-    public Restaurant(Integer id, String name, List<Dish> menu) {
+    public Restaurant(Integer id, String name, Map<LocalDate,List<Dish>>  todayMenu) {
         this.id = id;
         this.name = name;
-        this.menu = menu;
+        this.menu = todayMenu;
     }
 
 
@@ -34,11 +39,11 @@ public class Restaurant extends NamedEntity {
     }
 
 
-    public void setMenu(List<Dish> menu) {
-        this.menu = menu;
+    public void setMenu(Map<LocalDate,List<Dish>>  todayMenu) {
+        this.menu = todayMenu;
     }
 
-    public List<Dish> getMenu() {
+    public Map<LocalDate,List<Dish>>  getMenu() {
         return menu;
     }
 

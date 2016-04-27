@@ -2,7 +2,7 @@ package titarenko.project.javarestaurant.web;
 
 
 
-import titarenko.project.javarestaurant.repository.InMemoryRestaurantRepositoryImpl;
+import titarenko.project.javarestaurant.repository.memory.InMemoryRestaurantRepositoryImpl;
 import titarenko.project.javarestaurant.repository.RestaurantRepository;
 
 import javax.servlet.ServletConfig;
