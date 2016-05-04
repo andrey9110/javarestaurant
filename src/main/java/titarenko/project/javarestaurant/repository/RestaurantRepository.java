@@ -20,7 +20,7 @@ public interface RestaurantRepository {
 
     Restaurant get(Integer id);
 
-    Collection<Restaurant> getAll();
+    List<Restaurant> getAll();
 
     Restaurant addVote(int restaurantId,int userId);
 

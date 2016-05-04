@@ -9,7 +9,6 @@
 <section>
     <h2><a href="index.html">Home</a></h2>
     <h3>Restaurant list</h3>
-    <a href="restaurants?action=create">Add Restaurant</a>
     <hr>
     <table border="1" cellpadding="8" cellspacing="0">
         <thead>
@@ -17,16 +16,14 @@
             <th>Name</th>
             <th>Votes</th>
             <th></th>
-            <th></th>
         </tr>
         </thead>
         <c:forEach items="${restaurantList}" var="restaurant">
-            <jsp:useBean id="restaurant" scope="page" type="model.Restaurant"/>
+            <jsp:useBean id="restaurant" scope="page" type="titarenko.project.javarestaurant.model.Restaurant"/>
             <tr>
-                <td>${restaurant.name}</td>
-                <td>${restaurant.votes}</td>
-                <td><a href="restaurants?action=update&id=${restaurant.id}">Update</a></td>
-                <td><a href="restaurants?action=delete&id=${restaurant.id}">Delete</a></td>
+                <td><a href="admin">${restaurant.name}</a></td>
+                <td>${restaurant.votes.size()}</td>
+                <td><a href="user?action=vote&id=${restaurant.id}">Vote</a></td>
             </tr>
         </c:forEach>
     </table>

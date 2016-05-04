@@ -40,12 +40,12 @@ public class RestaurantUtil {
                     put(LocalDateTime.now().toLocalDate(),DishUtil.EL_CORASON_MENU);
                 }
             }));
-            add(new Restaurant("EL Corason",new HashMap< LocalDate,List<Dish>>() {
+            add(new Restaurant("Olio",new HashMap< LocalDate,List<Dish>>() {
                 {
                     put(LocalDate.now(),DishUtil.OLIO_MENU);
                 }
             }));
-            add(new Restaurant("EL Corason",new HashMap< LocalDate,List<Dish>>() {
+            add(new Restaurant("Svecha",new HashMap< LocalDate,List<Dish>>() {
                 {
                     put(LocalDate.now(),DishUtil.SVECHA_MENU);
                 }

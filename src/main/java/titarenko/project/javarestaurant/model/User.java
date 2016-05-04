@@ -26,21 +26,16 @@ public class User extends NamedEntity {
     public User() {
     }
 
-    public User(User user) {
-        this(user.getId(),user.getName(),user.getEmail(),user.getPassword(),user.getRegistered(),user.isEnabled(),user.getRoles());
+    public User(Integer id, String name, String email, String password, Role role, Role... roles) {
+        this(id, name, email, password,  true, EnumSet.of(role, roles));
     }
 
-    public User(Integer id, String name, String email, String password, Date registered, boolean enabled, Role role, Role... roles) {
-        this(id, name, email, password, registered,enabled, EnumSet.of(role, roles));
-    }
-
-    public User(Integer id, String name, String email, String password, Date registered, boolean enabled, Set<Role> roles) {
+    public User(Integer id, String name, String email, String password, boolean enabled, Set<Role> roles) {
         super(id, name);
         this.email = email;
         this.password = password;
-        this.registered = registered;
         this.enabled = enabled;
-        this.roles = EnumSet.copyOf(roles);
+        this.roles = roles;
     }
 
     public String getEmail() {

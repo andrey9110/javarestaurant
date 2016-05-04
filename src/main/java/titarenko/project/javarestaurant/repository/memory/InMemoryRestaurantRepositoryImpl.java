@@ -1,6 +1,7 @@
 package titarenko.project.javarestaurant.repository.memory;
 
 
+import org.springframework.stereotype.Repository;
 import titarenko.project.javarestaurant.model.Dish;
 
 import titarenko.project.javarestaurant.model.Restaurant;
@@ -16,6 +17,7 @@ import java.util.stream.Collectors;
 /**
  * Created by MyMac on 06.04.16.
  */
+@Repository
 public class InMemoryRestaurantRepositoryImpl implements RestaurantRepository {
 
     public static final Comparator<Restaurant> USER_MEAL_COMPARATOR = Comparator.comparing((java.util.function.Function<Restaurant, Integer>) restaurant -> restaurant.getVotes().size()).reversed();
@@ -61,7 +63,7 @@ public class InMemoryRestaurantRepositoryImpl implements RestaurantRepository {
     }
 
     @Override
-    public Collection<Restaurant> getAll() {
+    public List<Restaurant> getAll() {
         return repository == null ?
                 Collections.emptyList() :
                 repository.values().stream().sorted(USER_MEAL_COMPARATOR).collect(Collectors.toList());
